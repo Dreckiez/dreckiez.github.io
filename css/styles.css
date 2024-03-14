@@ -1,8 +1,132 @@
-#Introduction {
+main #Introduction {
     color:#4c3d6d;
     font-size: 2em;
+    background: url(../images/fleck-white.png), 
+    linear-gradient(
+        to top right,
+        #e2718d 0%,
+        #e2718d 50%,
+        #71e2a6 50%,
+        #71e2a6 100%
+    );
+    padding: 80px;
+    /* background: url(../images/fleck-white.png), url(../images/bg.svg), #e2718d;
+    background-image: url(../images/fleck-white.png), url(../images/bg.svg), initial;
+    background-position-x: initial, initial, initial;
+    background-position-y: initial, initial, initial;
+    background-size: initial, initial, initial;
+    background-repeat: initial, initial, initial;
+    background-attachment: initial, initial, initial;
+    background-origin: initial, initial, initial;
+    background-clip: initial, initial, initial;
+    background-color: rgb(226, 113, 141);
+    background-size: auto, 100vw 100vw, auto;
+    background-repeat: repeat, no-repeat, repeat;
+    background-position: center center, top right, center; */
+    /* font-size: 1em;
+    line-height: 1.5;
+    padding: 1.3333333333rem; */
 }
 
-.font{
+h1 {
+    /* font-size: 2em;
+    margin: 0.67em 0;
+    margin-bottom: 0; */
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: -0.0416666667rem;
+    line-height: 1;
+    margin: 0 0 0.6666666667rem;
+    padding-top: 0.6666666667rem;
+}
+
+h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 0.8em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+div {
+    display: block;
+}
+
+main .font{
     font-family: 'Fira Code', monospace;
+}
+
+main {
+    background-image: url(../images/fleck-white.png), initial;
+    background-position-x: initial, initial, initial;
+    background-position-y: initial, initial, initial;
+    background-size: initial, initial, initial;
+    background-repeat: initial, initial, initial;
+    background-attachment: initial, initial, initial;
+    background-origin: initial, initial, initial;
+    background-clip: initial, initial, initial;
+    background-size: auto, 100vw 100vw, auto;
+    background-repeat: repeat, no-repeat, repeat;
+    background-position: center center, top right, center;
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 1.3333333333rem;
+}
+
+body {
+    /* background: #e2718d; */
+    background: url(../images/fleck-white.png), #e2718d;
+    background-image: url(../images/fleck-white.png), initial;
+    background-position-x: initial, initial, initial;
+    background-position-y: initial, initial, initial;
+    background-size: initial, initial, initial;
+    background-repeat: initial, initial, initial;
+    background-attachment: initial, initial, initial;
+    background-origin: initial, initial, initial;
+    background-clip: initial, initial, initial;
+    background-color: rgb(226, 113, 141);
+    background-size: auto, 100vw 100vw, auto;
+    background-repeat: repeat, no-repeat, repeat;
+    background-position: center center, top right, center;
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 1.3333333333rem;
+    
+    margin: 0;
+    display: block;
+    padding: 32px;
+}
+
+main #About {
+    background: #e2718d;
+    background-image: url(../images/fleck-white.png);
+    padding: 32px;
+
+}
+
+main #Subjects {
+    background: #71e2a6;
+    background-image: url(../images/fleck-white.png);
+    padding: 32px;
+}
+
+main #Projects {
+    padding: 32px;
+    background: linear-gradient(
+        to top left,
+        #e2718d 0%,
+        #e2718d 50%,
+        #71e2a6 50%,
+        #71e2a6 100%
+    );
+    background-image: url(../images/fleck-white.png);
 }
