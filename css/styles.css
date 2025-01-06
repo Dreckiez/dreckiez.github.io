@@ -1,445 +1,120 @@
-main #Introduction {
-    color:#4c3d6d;
-    font-size: 2em;
-    background: url(../images/fleck-white.png), 
-    linear-gradient(
-        to top right,
-        #e2718d 0%,
-        #e2718d 50%,
-        #71e2a6 50%,
-        #71e2a6 100%
-    );
-    height: 530px;
-    padding: 80px;
-    padding-bottom: 17px;
+a {
+    text-decoration: none;
 }
 
-#Introduction img {
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    left: 823px;
-    top: 247px;
-    transition: .3s;
+.header {
+    margin-left: 24px;
+    margin-right: 24px;
+    left: 0;
+    right: 0;
+    position: fixed;
+    justify-content: space-between;
+    display: flex;
+    flex: 1;
 }
 
-#Introduction img:hover {
-    transform: translateY(-5px) translateX(-5px);
-    box-shadow: 6px 6px 20px #00000070;
-}
-
-h1 {
-    display: inline;
+.inside-header{
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
-    top: 100px;
-    left: 30px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 3.5em;
-    font-weight: 900;
-    letter-spacing: -0.0416666667rem;
-    line-height: 1;
-    margin: 0 0 0.6666666667rem;
-    padding-top: 0.6666666667rem;
+    display: flex;
+    flex: 0.65;
 }
 
-h2 {
-    text-decoration: underline;
-    top: 100px;
-    font-size: 2em;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    margin-top: 0;
-}
-
-
-#h2intro {
-    position: relative;
-    left: 30px;
-    font-size: 1em;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    margin-top: 0;
-}
-
-p {
-    font: weight 500px;
-    line-height: 2;
+.left-nav {
+    display: flex;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    font-weight: 650;
     color: white;
-    font-size: 2em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    margin-top: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-div {
-    display: block;
+.right-nav {
+    margin-left: 1.5rem;
+    color: white;
+    display:inline-flex;
+    align-items: center;
 }
 
-main .font{
-    font-family: 'Fira Code', monospace;
-}
-
-main {
-    background-image: url(../images/fleck-white.png), initial;
-    background-position-x: initial, initial, initial;
-    background-position-y: initial, initial, initial;
-    background-size: initial, initial, initial;
-    background-repeat: initial, initial, initial;
-    background-attachment: initial, initial, initial;
-    background-origin: initial, initial, initial;
-    background-clip: initial, initial, initial;
-    background-size: auto, 100vw 100vw, auto;
-    background-repeat: repeat, no-repeat, repeat;
-    background-position: center center, top right, center;
-    font-size: 1em;
-    line-height: 1.5;
-    padding: 1.3333333333rem;
+.text-nav {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    font-weight: 650;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 body {
-    /* background: #e2718d; */
-    background: url(../images/fleck-white.png), #e2718d;
-    background-image: url(../images/fleck-white.png), initial;
-    background-position-x: initial, initial, initial;
-    background-position-y: initial, initial, initial;
-    background-size: initial, initial, initial;
-    background-repeat: initial, initial, initial;
-    background-attachment: initial, initial, initial;
-    background-origin: initial, initial, initial;
-    background-clip: initial, initial, initial;
-    background-color: rgb(226, 113, 141);
-    background-size: auto, 100vw 100vw, auto;
-    background-repeat: repeat, no-repeat, repeat;
-    background-position: center center, top right, center;
-    font-size: 1em;
-    line-height: 1.5;
-    padding: 1.3333333333rem;
-    margin: 0;
+    font-family: ui-sans-serif, system-ui, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    background-color: rgb(30, 41, 59);
+}
+
+main {
     display: block;
-    padding: 32px;
+    flex-grow: 1;
 }
 
-body::-webkit-scrollbar {
-    display: none;
+.PFP {
+    width: 144px;
+    height: 144px;
+    margin-bottom: 0.5rem;
+    border-radius: 9999px;
 }
 
-main #About {
+.PFP-name {
+    font-weight: 800;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
     color: white;
-    background: #e2718d;
-    background-image: url(../images/fleck-white.png);
-    padding: 32px;
-    height: 685px;
-    padding-bottom: 150px;
+    margin: 0;
 }
 
-main #Subjects {
-    height: 600px;
-    color: white;
-    background: #71e2a6;
-    background-image: url(../images/fleck-white.png);
-    padding: 32px;
+.PFP-line {
+    color: rgb(148, 163, 184);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin: 0;
 }
 
-#About h2 {
-    font-size: 3em;
+.home-page {
+    display: block;
 }
 
-#Subjects h2{
-    font-size: 3em;
-    text-align: center;
-    color: #114B5F;
-}
-
-#Projects h2{
-    font-size: 3em;
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-#Projects #subtext {
-    font-size: 1em;
-    position: relative;
-    text-align: center;
-}
-
-main #Projects {
-    color: white;
-    padding: 32px;
-    background: linear-gradient(
-        to top left,
-        #e2718d 0%,
-        #e2718d 50%,
-        #71e2a6 50%,
-        #71e2a6 100%
-    );
-    background-image: url(../images/fleck-white.png);
-}
-
-.imgcontainer {
-    padding-top: 60px;
+.PF {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.row {
-    display:flex;
-
-}
-
-.column {
-    width: 400px;
-    height: 261px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    border-radius: 6px;
-    box-shadow: -6px 6px 20px #00000070;
-    transition: .3s linear;
-}
-
-.column img {
-    width: 100%;
-}
-
-.column:not(:first-child) {
-    margin-left: -50px;
-}
-
-.column:hover {
-    transform: translateY(-24px);
-}
-
-.column:hover ~ .column{
-    transform: translateX(60px);
-}
-
-.sjtext {
-    font-size: 27px;
-}
-
-.sjboxes {
-    padding: 0.5rem 0.75rem;
-    background-color: #114B5F;
-    background-blend-mode: soft-light;
-    align-items: center;
-    display: inline-flex;
-    vertical-align: middle;
-    flex-direction: row;
-    white-space: nowrap;
-    justify-content: center;
-    text-align: left;
-    border-radius: 0.5rem;
-    color: white;    
-    margin: 5px;
-    opacity: 0.9;
-    transition: .2s linear;
-}
-
-.sjboxes:hover {
-    opacity: 1;
-}
-
-.SJS {
-    margin-bottom: 0.83rem;
-}
-
-.Role {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-.rlboxes {
-    padding: 0.5rem 0.75rem;
-    background-color: #114B5F;
-    background-blend-mode: soft-light;
-    align-items: center;
-    display: inline-flex;
-    vertical-align: middle;
-    flex-direction: row;
-    white-space: nowrap;
-    justify-content: center;
-    text-align: left;
-    border-radius: 0.5rem;
-    color: white;    
-    margin: 5px;
-    opacity: 0.9;
-    transition: .2s linear;
-    height: 40px;
-}
-
-.rltext {
-    justify-content: center;
-    font-size: 15px;
-}
-
-.rlboxes:hover {
-    opacity: 1;
-}
-
-.leftrole {
-    padding-left: 3px;
-}
-
-.blurtext {
-    width: 565px;
-    filter: blur(10px);   
-}
-
-.blurtext:hover {
-    filter:blur(0);
-}
-
-.a_link {
-    text-shadow: -6px 6px 20px #00000070;
-    color: white;
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-    transition: .3s;
-    z-index: 1;
-}
-
-.a_link:before {
-    background: #71e2a6;
-    left: 5%;
-    transform: translateY(4px);
-    transition: .3s linear;
-    box-shadow: -6px 6px 100px #00000070;;
-}
-
-.a_link:hover:before {
-    background-color: #4c3d6d;
-    transform: translateY(0);
-}
-
-.a_link:before, .a_link:after {
-    bottom: 5%;
-    content: "";
-    position: absolute;
-    top: 5%;
-    transition: .3s;
-    height: 80%;
-    width: 47%;
-    z-index: -1;
-}
-
-.a_link:after {
-    box-shadow: -6px 6px 100px #00000070;;
-    background: #e9b921;
-    left: 49%;
-    transform: translateY(-4px);
-    transition: .3s linear;
-}
-
-.a_link:hover::after {
-    background-color: #4c3d6d;
-    transform: translateY(0);
-}
-
-.PJS {
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    gap: 2rem;
-    justify-content: center;
-}
-
-.pjboxes {
-    overflow: hidden;
-    text-align: center;
-    background: linear-gradient(135deg, #4c3d6d 0%, #C9657E 50%, #4c3d6d 100%);
-    background-size: 200% 100%;
-    clip-path: polygon(8px 0%, calc(100% - 8px) 0%, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0% calc(100% - 8px), 0% 8px);
-    font-size: 0.6rem;
-    padding: 0.1666666667rem;
-    position: relative;
-    transition: .3s;
-    width: 100%;
-    z-index: 1;
-}
-
-.pjboxes:hover {
-    background-position: 100%;
-    transform: translateY(-12px);
-    box-shadow: -6px 6px 20px #00000070;
-}
-
-.pjinside::before {
-    background: rgb(255, 255, 255, 0.5);
-    content: '';
+    flex-direction: column;
     height: 100%;
-    opacity: 0.4;
-    position: absolute;
-    top: 0;
-    transform: skewX(-35deg) translateX(530px);
-    width: 10rem;
-    z-index: -1;
-    left: 0;
-    transition: .5s;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.pjinside:hover::before {
-    transform: skewX(-35deg) translateX(-315px);
+.empty-top {
+    min-height: 148px;
 }
 
-.pjtext {
-    text-decoration: none;
+.PFP-contact {
+    margin-top: .25rem;
 }
 
-.pjinside h2, .pjinside p {
-   text-shadow: -6px 6px 20px #00000070;
-}
-
-.pjboxes p {
-    font-size: 14px;
-}
-
-.pjboxes img {
-    box-shadow: -6px 6px 20px #00000070;
-    height: 15rem;
-}
-
-.upcoming {
-    filter: blur(2px);
-}
-
-.contactul {
+.contacts {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    position: absolute;
     left: 850px;
     top: 507px;
     width: 220px;
 }
 
-.contactli {
-    padding-right: 20px;
-    transition: .3s;
-}
-
-.contactli a {
-    justify-self: center;
-    text-decoration: none;
-}
-
-.contactli:hover{
-    transform: translateY(-5px);
-}
-
-.contactli a i {
-    text-shadow: -6px 6px 20px #00000070;
+.contacts li {
+    padding-left: .25rem;
+    padding-right: .25rem;
+    font-size: 1.5rem;
 }
