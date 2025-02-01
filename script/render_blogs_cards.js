@@ -12,7 +12,7 @@ fetch("../posts/blogs.json")
         let rowBlogs = [];
 
 
-        for (let i = 0; i < 9; i += 3) {
+        for (let i = 0; i < 6; i += 3) {
             const row = document.createElement("div");
             
             row.classList.add("row");
@@ -46,8 +46,9 @@ function createCard(post){
     const card = document.createElement("div");
     card.className = "card";
     const img_path = `../posts/${encodeURIComponent(post.title)}/${post.banner}`
+    const post_path = `../posts/${encodeURIComponent(post.title)}/${encodeURIComponent(post.link)}`
     card.innerHTML = `
-        <a>
+        <a href="${post_path}">
             <div class="banner" style="background-image:url('${img_path}');"></div>
             <div class="content">
                 <h3>${post.title}</h3>

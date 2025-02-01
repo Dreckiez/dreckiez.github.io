@@ -2,5 +2,6 @@
     "title": "My Freshman Year",
     "date": "09-01-2025",
     "banner": "HCMUS.png",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "link": "My Freshman Year.html",
+    "content": "Hi, welcome to my first blog! I've created this website and these (upcoming) blogs for a single purpose: honing my programming skills, knowledge and sharing my experiences as an IT student with a bit of C++ background from high school."
 }
