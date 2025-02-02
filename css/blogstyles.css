@@ -6,6 +6,8 @@ body {
     padding-left: 8rem;
     padding-right: 8rem;
     width: 1024px;
+    font-family: ui-sans-serif, system-ui, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    background-color: rgb(30, 41, 59);
 }
 
 .main-page {
@@ -15,6 +17,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #60a5fa;
 }
 
 .header {
@@ -55,12 +58,12 @@ a {
     font-size: 1.4rem;
     line-height: 1.5rem;
     font-weight: 650;
-    color: white;
+    color: #eef0f4;
 }
 
 .right-nav {
     margin-left: 1.5rem;
-    color: white;
+    color: #eef0f4;
     display:inline-flex;
     align-items: center;
 }
@@ -74,11 +77,6 @@ a {
     line-height: 1.5rem;
 }
 
-body {
-    font-family: ui-sans-serif, system-ui, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
-    background-color: rgb(30, 41, 59);
-}
-
 main {
     flex-grow: 1;
 }
@@ -88,13 +86,13 @@ main {
 }
 
 header p{
-    color: rgb(148, 163, 184);
+    color: #eef0f4;
     font-weight: 500;
 }
 
 h1 {
     font-weight: 800;
-    color: white;
+    color: #eef0f4;
     margin-top: 0;
     font-size: 2.25em;
     margin-bottom: 0;
@@ -102,20 +100,20 @@ h1 {
 }
 
 h2 {
-    color: white;
+    color: #eef0f4;
 }
 
 hr {
-    color: rgb(148, 163, 184);
+    color: #eef0f4;
 }
 
 blockquote {
-    color: white;
+    color: #eef0f4;
 }
 
 .note {
     /* #18202b */
-    background-color: #252941;
+    background-color: rgba(73, 9, 162, 0.03);
     box-shadow: -2px 0 0 #60a5fa, -4px 0 0 rgb(30, 41, 59), -7px 0 0 #60a5fa;
     padding: 0.1px 30px 5px 30px;
 }
@@ -140,7 +138,7 @@ blockquote {
 
 p {
     margin: .5rem 0;
-    color: white;
+    color: #eef0f4;
     line-height: 1.5;
 }
 
@@ -152,7 +150,7 @@ img {
 }
 
 ul {
-    color: white;
+    color: #eef0f4;
 }
 
 .footer {
@@ -171,11 +169,11 @@ ul {
     cursor: pointer;
     border: none;
     background-color: rgb(30, 41, 59);
-    color: #cad4e0;
+    color: #eef0f4;
 }
 
 .footerbutton {
-    color: #cad4e0;
+    color: #eef0f4;
     padding: .3rem 0 1rem;
     display: flex;
     justify-content: space-between;
@@ -185,19 +183,5 @@ footer {
     padding: 1.75rem 0;
     display: flex;
     justify-content: center;
-}
-
-.contacts {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.contacts li {
-    padding: 0 .5rem;
-    font-size: 1.5rem;
-    transition: 150ms;
-    opacity: 0.55;
 }
 
