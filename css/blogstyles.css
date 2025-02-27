@@ -179,6 +179,14 @@ ul {
     justify-content: space-between;
 }
 
+#prev-nav {
+    margin-right: auto;
+}
+
+#next-nav {
+    margin-left: auto;
+}
+
 footer {
     padding: 1.75rem 0;
     display: flex;
