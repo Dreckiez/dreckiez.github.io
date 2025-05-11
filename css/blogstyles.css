@@ -7,7 +7,7 @@ body {
     padding-right: 8rem;
     width: 1024px;
     font-family: ui-sans-serif, system-ui, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
-    background-color: rgb(30, 41, 59);
+    background-color: #151719;
 }
 
 .main-page {
@@ -58,12 +58,12 @@ a {
     font-size: 1.4rem;
     line-height: 1.5rem;
     font-weight: 650;
-    color: #eef0f4;
+    color: #e8eef2;
 }
 
 .right-nav {
     margin-left: 1.5rem;
-    color: #eef0f4;
+    color: #e8eef2;
     display:inline-flex;
     align-items: center;
 }
@@ -86,13 +86,13 @@ main {
 }
 
 header p{
-    color: #eef0f4;
+    color: #e8eef2;
     font-weight: 500;
 }
 
 h1 {
     font-weight: 800;
-    color: #eef0f4;
+    color: #e8eef2;
     margin-top: 0;
     font-size: 2.25em;
     margin-bottom: 0;
@@ -100,20 +100,20 @@ h1 {
 }
 
 h2 {
-    color: #eef0f4;
+    color: #e8eef2;
 }
 
 hr {
-    color: #eef0f4;
+    color: #e8eef2;
 }
 
 blockquote {
-    color: #eef0f4;
+    color: #e8eef2;
 }
 
 .note {
     /* #18202b */
-    background-color: rgba(73, 9, 162, 0.03);
+    background-color: #151719;
     box-shadow: -2px 0 0 #60a5fa, -4px 0 0 rgb(30, 41, 59), -7px 0 0 #60a5fa;
     padding: 0.1px 30px 5px 30px;
 }
@@ -138,7 +138,7 @@ blockquote {
 
 p {
     margin: .5rem 0;
-    color: #eef0f4;
+    color: #e8eef2;
     line-height: 1.5;
 }
 
@@ -150,7 +150,7 @@ img {
 }
 
 ul {
-    color: #eef0f4;
+    color: #e8eef2;
 }
 
 .footer {
@@ -168,12 +168,12 @@ ul {
     font-weight: bold;
     cursor: pointer;
     border: none;
-    background-color: rgb(30, 41, 59);
-    color: #eef0f4;
+    background-color: #151719;
+    color: #e8eef2;
 }
 
 .footerbutton {
-    color: #eef0f4;
+    color: #e8eef2;
     padding: .3rem 0 1rem;
     display: flex;
     justify-content: space-between;

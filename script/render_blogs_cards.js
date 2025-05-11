@@ -28,7 +28,7 @@ fetch("../posts/blogs.json")
     })
     .then(latestPost => {
         latestPost.forEach(post => {
-            const card = createCard(post);
+            const card = createBlogCard(post);
             blogCard.appendChild(card);
         });
     })
@@ -42,7 +42,7 @@ function ParseDate(date){
     return new Date(`${year}-${month}-${day}`);
 }
 
-function createCard(post){
+function createBlogCard(post){
     const card = document.createElement("div");
     card.className = "card";
     const img_path = `../posts/${encodeURIComponent(post.title)}/${post.banner}`

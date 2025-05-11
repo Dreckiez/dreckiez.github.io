@@ -7,7 +7,7 @@ body {
     padding-right: 8rem;
     width: 1024px;
     font-family: ui-sans-serif, system-ui, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
-    background-color: rgb(30, 41, 59);
+    background-color: #151719;
 }
 
 .main-page {
@@ -58,12 +58,12 @@ a {
     font-size: 1.4rem;
     line-height: 1.5rem;
     font-weight: 650;
-    color: #eef0f4;
+    color: #e8eef2;
 }
 
 .right-nav {
     margin-left: 1.5rem;
-    color: #eef0f4;
+    color: #e8eef2;
     display:inline-flex;
     align-items: center;
 }
@@ -86,13 +86,13 @@ main {
 }
 
 header p{
-    color: #eef0f4;
+    color: #e8eef2;
     font-weight: 500;
 }
 
 h1 {
     font-weight: 800;
-    color: #eef0f4;
+    color: #e8eef2;
     margin-top: 0;
     font-size: 2.25em;
     margin-bottom: 0;
@@ -100,15 +100,15 @@ h1 {
 }
 
 h2 {
-    color: #eef0f4;
+    color: #e8eef2;
 }
 
 hr {
-    color: #eef0f4;
+    color: #e8eef2;
 }
 
 blockquote {
-    color: #eef0f4;
+    color: #e8eef2;
 }
 
 .note {
@@ -138,7 +138,7 @@ blockquote {
 
 p {
     margin: .5rem 0;
-    color: #eef0f4;
+    color: #e8eef2;
     line-height: 1.5;
 }
 
@@ -151,7 +151,7 @@ img {
 }
 
 ul {
-    color: #eef0f4;
+    color: #e8eef2;
 }
 
 .footer {
@@ -170,11 +170,11 @@ ul {
     cursor: pointer;
     border: none;
     background-color: rgb(30, 41, 59);
-    color: #eef0f4;
+    color: #e8eef2;
 }
 
 .footerbutton {
-    color: #eef0f4;
+    color: #e8eef2;
     padding: .3rem 0 1rem;
     display: flex;
     justify-content: space-between;
@@ -195,8 +195,8 @@ footer {
 
 #pagi-nav button {
     margin: 0 14px;
-    background-color: rgb(30, 41, 59);
-    color: #eef0f4;
+    background-color: #151719;
+    color: #e8eef2;
     font-weight: bolder;
     border-top: 0;
     border-left: 0;
@@ -210,6 +210,7 @@ footer {
 
 #pagi-nav .active {
     border-bottom-color: rgba(238, 240, 244, 1);
+    background-color: #1a1f22;
 }
 
 #pagi-nav .inactive {

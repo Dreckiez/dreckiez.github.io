@@ -7,7 +7,13 @@ body {
     padding-right: 8rem;
     width: 1024px;
     font-family: ui-sans-serif, system-ui, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
-    background-color: rgb(30, 41, 59);
+    background-color: #151719;
+}
+
+footer {
+    padding: 1.75rem 0;
+    display: flex;
+    justify-content: center;
 }
 
 .main-page {
@@ -16,12 +22,12 @@ body {
 }
 
 a {
-    color: #eef0f4;
+    color: #e8eef2;
     text-decoration: none;
 }
 
 a:active {
-    color: #eef0f4;
+    color: #e8eef2;
 }
 
 .header {
@@ -72,12 +78,12 @@ a:active {
     font-size: 1.4rem;
     line-height: 1.5rem;
     font-weight: 650;
-    color: #eef0f4;
+    color: #e8eef2;
 }
 
 .right-nav {
     margin-left: 1.5rem;
-    color: #eef0f4;
+    color: #e8eef2;
     display:inline-flex;
     align-items: center;
 }
@@ -106,7 +112,7 @@ main {
     font-weight: 800;
     font-size: 2.25rem;
     line-height: 2.5rem;
-    color: #eef0f4;
+    color: #e8eef2;
     margin: 0;
 }
 
@@ -157,7 +163,7 @@ main {
 }
 
 .contacts li:hover {
-    color: #eef0f4;
+    color: #e8eef2;
     transform: translateY(-5px);
     opacity: 1;
     transition: 0.3s;
@@ -166,7 +172,7 @@ main {
 .blogs-block-text {
     margin-top: 2rem;
     margin-bottom: 2.5rem;
-    color: #eef0f4;
+    color: #e8eef2;
     font-weight: 800;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -180,22 +186,30 @@ main {
     justify-content: center;
 }
 
+#projects-posts-cards {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    gap: 1rem;
+    justify-content: center;
+}
+
 .card, .empty {
-    background-color: rgb(30, 41, 59);
-    color: #eef0f4;
+    background-color: #151719;
+    color: #e8eef2;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-color: #334155;
+    border-color: #383d42;
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-radius: 3px;
 }
 
 .card:hover {
-    box-shadow: 0 4px 8px 0 rgba(73, 9, 162, 0.2), 0 6px 20px 0 rgba(73, 9, 162, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(73, 9, 162, 0.2), 0 6px 20px 0 rgba(73, 9, 162, 0.19); */
+    background-color: #1a1f22;
 }
 
 hr {
-    color: #eef0f4;
+    color: #e8eef2;
 }
 
 .content {
@@ -234,8 +248,9 @@ hr {
     color: rgba(238, 240, 244, 0.64);
     font-size: .875rem;
     line-height: 1.25rem;
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
+    padding-top: .3rem;
+    padding-bottom: .7rem;
+    font-weight: 300;
 }
 
 .summary {
