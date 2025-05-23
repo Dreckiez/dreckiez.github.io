@@ -2,5 +2,7 @@
     "title": "Pokemon Matching Game",
     "banner": "Pokemon.png",
     "link": "https://github.com/Dreckiez/Pokemon-Matching-Game",
+    "date": "Freshman",
+    "summary": "Recreation of a childhood game",
     "content": "This is a mini project for my Programming Techniques subject. The project's purpose was to test my understandings and knowledge about 2D pointer and Linked List as well as my programming skills.<br>This project was created based on the Raylib library. I chose it because it seems like a modern and easy-to-use library for videogames programming with many handy functions for visualization."
 }

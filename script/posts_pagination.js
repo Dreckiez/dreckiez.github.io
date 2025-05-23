@@ -1,4 +1,5 @@
 const blogPage = document.getElementById("blogs-page");
+const blogList = document.getElementById("blogs-list");
 
 fetch("../posts/blogs.json")
     .then(response => response.json())
@@ -18,10 +19,12 @@ fetch("../posts/blogs.json")
     .catch(error => console.error("Can't Fetch Blogs:", error));
 
 function displayPosts(page, posts, totalPages) {
-    const startIndex = (page - 1) * 4;
-    const endIndex = startIndex + 4;
+    const startIndex = (page - 1) * 10;
+    const endIndex = startIndex + 10;
     const paginatedPosts = posts.slice(startIndex, endIndex);
-    blogPage.innerHTML = ''; // Clear existing posts
+    let flag = true
+    if (paginatedPosts.length <= 10) flag = false
+    blogList.innerHTML = ''; // Clear existing posts
     const promises = paginatedPosts.map(post =>
         fetch(`../posts/${post.file}`).then(res => res.json())
     );
@@ -29,9 +32,9 @@ function displayPosts(page, posts, totalPages) {
         .then(latestPosts => {
             latestPosts.forEach(post => {
                 const card = createPost(post);
-                blogPage.appendChild(card);
+                blogList.appendChild(card);
             });
-            PaginationNav(page, posts, totalPages);
+            if (flag) PaginationNav(page, posts, totalPages);
         })
         .catch(error => console.error("Can't Fetch Blog Posts:", error));
 }
@@ -59,37 +62,24 @@ function ParseDate(date){
 }
 
 function createPost(post){
-    const card = document.createElement("div");
+    const card = document.createElement("li");
     card.className = "card";
-    const img_path = `../posts/${encodeURIComponent(post.title)}/${post.banner}`
     const post_path = `../posts/${encodeURIComponent(post.title)}/${encodeURIComponent(post.link)}`
     card.innerHTML = `
-        <div>
-            <blockquote class="title">
-                <h2>
-                    ${post.title}
-                </h2>
-                <hr>
-            </blockquote>
-            <p>
-                <a href="${post_path}">
-                    <img src="${img_path}">
-                </a>
-            </p>
-            <p>
-                ${post.content.slice(0,515)}...
-            </p>
-            <div style="display: flex; justify-content: space-between;">
-                <a href="${post_path}">
-                    <p style="color: #60a5fa">
-                        Read more
-                    </p>
-                </a>
-                <p>
-                    ${post.date}
-                </p>
-            </div
-        </div>
+        <span>
+            <a href="${post_path}">
+                <div class="post-item">
+                    <div>
+                        <span class="title">${post.title}</span>
+                        <br>
+                        <span class="summary">${post.summary}</span>
+                    </div>
+                    <div>
+                        <span>${post.date}</span>
+                    </div>
+                </div>
+            </a>
+        </span>
     `;
     return card;
 }

@@ -6,7 +6,8 @@ body {
     padding-left: 8rem;
     padding-right: 8rem;
     width: 1024px;
-    font-family: ui-sans-serif, system-ui, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    /* font-family: ui-sans-serif, system-ui, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji; */
+    font-family: Inter Variable, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
     background-color: #151719;
 }
 

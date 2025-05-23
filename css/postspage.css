@@ -6,7 +6,8 @@ body {
     padding-left: 8rem;
     padding-right: 8rem;
     width: 1024px;
-    font-family: ui-sans-serif, system-ui, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    /* font-family: ui-sans-serif, system-ui, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji; */
+    font-family: Inter Variable, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
     background-color: #151719;
 }
 
@@ -15,9 +16,14 @@ body {
     flex-direction: column;
 }
 
+#blogs-page {
+    margin: auto;
+    max-width: 85ch;
+}
+
 a {
     text-decoration: none;
-    color: #60a5fa;
+    color: #e8eef2;
 }
 
 .header {
@@ -99,6 +105,18 @@ h1 {
     line-height: 1.1111111;
 }
 
+.title {
+    font-weight: 500;
+    line-height:1em;
+    font-size: larger;
+}
+
+.summary {
+    color: #acacac;
+    line-height:1em;
+    font-size: larger;
+}
+
 h2 {
     color: #e8eef2;
 }
@@ -107,51 +125,24 @@ hr {
     color: #e8eef2;
 }
 
-blockquote {
-    color: #e8eef2;
-}
-
-.note {
-    /* #18202b */
-    background-color: rgba(73, 9, 162, 0.03);
-    box-shadow: -2px 0 0 #60a5fa, -4px 0 0 rgb(30, 41, 59), -7px 0 0 #60a5fa;
-    padding: 0.1px 30px 5px 30px;
-}
-
-.note h2 {
-    font-size: 20px;
-}
-
-.title {
-    box-shadow: -5.5px 0 0 #60a5fa;
-    padding: 0.1px 30px 0px 30px;
-    margin: 19.2px 0px 19.2px 0px;
-}
-
-.title h2 {
-    margin: 0;
-}
-
-.banner {
-    margin: .57rem 0 1rem 0;
-}
-
 p {
     margin: .5rem 0;
     color: #e8eef2;
     line-height: 1.5;
 }
 
-img {
-    width: 1024px;
-    height: 400px;
-    object-fit: cover;
-    margin: 0 auto;
-    display: block;
+ul {
+    margin: 0;
+    padding: 64px 0 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
-ul {
-    color: #e8eef2;
+.post-item {
+    justify-content: space-between;
+    display: flex;
 }
 
 .footer {
