@@ -9,6 +9,7 @@ body {
     /* font-family: ui-sans-serif, system-ui, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji; */
     font-family: Inter Variable, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
     background-color: #151719;
+    background-image: url(/images/nnnoise.svg);
 }
 
 .main-page {
@@ -24,6 +25,10 @@ body {
 a {
     text-decoration: none;
     color: #e8eef2;
+}
+
+a hr {
+    margin-top: 1.65rem;
 }
 
 .header {
@@ -137,7 +142,7 @@ ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 1.3rem;
 }
 
 .post-item {

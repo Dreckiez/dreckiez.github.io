@@ -66,7 +66,7 @@ function createPost(post){
     card.className = "card";
     const post_path = `../posts/${encodeURIComponent(post.title)}/${encodeURIComponent(post.link)}`
     card.innerHTML = `
-        <span>
+        <div>
             <a href="${post_path}">
                 <div class="post-item">
                     <div>
@@ -75,11 +75,12 @@ function createPost(post){
                         <span class="summary">${post.summary}</span>
                     </div>
                     <div>
-                        <span>${post.date}</span>
+                        <span class="date">${post.date}</span>
                     </div>
                 </div>
+                <hr>
             </a>
-        </span>
+        </div>
     `;
     return card;
 }

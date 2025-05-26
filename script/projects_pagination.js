@@ -56,7 +56,7 @@ function createPost(post){
     card.className = "card";
     const img_path = `../projects/${encodeURIComponent(post.title)}/${post.banner}`
     card.innerHTML = `
-        <span>
+        <div>
             <a href="${post.link}">
                 <div class="post-item">
                     <div>
@@ -68,8 +68,9 @@ function createPost(post){
                         <span>${post.date}</span>
                     </div>
                 </div>
+                <hr>
             </a>
-        </span>
+        </div>
     `;
     return card;
 }

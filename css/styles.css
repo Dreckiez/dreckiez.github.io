@@ -9,6 +9,7 @@ body {
     /* font-family: ui-sans-serif, system-ui, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji; */
     font-family: Inter Variable, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
     background-color: #151719;
+    background-image: url(/images/nnnoise.svg);
 }
 
 footer {
@@ -43,14 +44,15 @@ a:active {
     flex: 1;
 }
 
-.title {
-    box-shadow: -5.5px 0 0 #60a5fa;
-    padding: 0.1px 30px 0px 30px;
+.blogtitle, .projtitle {
+    /* box-shadow: -5.5px 0 0 #60a5fa; */
+    /* padding: 0.1px 30px 0px 30px; */
+    padding: 0.1px 0px 0px 0px;
     margin: 19.2px 0px 19.2px 0px;
 }
 
-.title h2 {
-    margin: 0;
+.projtitle {
+    margin-top: 1.7rem;
 }
 
 #header-blur {
@@ -171,13 +173,46 @@ main {
 }
 
 .blogs-block-text {
-    margin-top: 2rem;
     margin-bottom: 2.5rem;
     color: #e8eef2;
     font-weight: 800;
     font-size: 1.5rem;
     line-height: 2rem;
-    display: block;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    line-height: 3.3rem;
+}
+
+.subheading {
+  font-size: 2.8rem;
+  font-weight: bolder;
+  letter-spacing: 0.05em;
+}
+
+.mainheading {
+  font-size: 4.16rem;
+  font-weight: bold;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1.2px;
+    background-color: white;
+    margin-top: 5.4rem;
+    margin-left: 1.4rem;
+}
+
+.projline {
+    flex-grow: 1;
+    height: 1.2px;
+    background-color: white;
+    margin-top: 2.15rem;
+    margin-right: 1.4rem;
 }
 
 #blogs-posts-cards {
