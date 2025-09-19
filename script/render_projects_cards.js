@@ -36,7 +36,7 @@ function createProjCard(post){
     const proj_img_path = `../projects/${encodeURIComponent(post.title)}/${post.banner}`
     const proj_path = `../projects/${encodeURIComponent(post.title)}/${encodeURIComponent(post.link)}`
     projcard.innerHTML = `
-        <a href="${proj_path}">
+        <a href="${post.link}">
             <div class="banner" style="background-image:url('${proj_img_path}');"></div>
             <div class="content">
                 <h3>${post.title}</h3>
