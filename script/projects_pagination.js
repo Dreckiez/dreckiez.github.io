@@ -5,9 +5,10 @@ const projectList = document.getElementById("projects-list");
 fetch("../projects/projects.json")
     .then(response => response.json())
     .then(blogs => {
+        const latest = blogs.sort((a, b) => b.id - a.id);
         const totalPages = Math.ceil(blogs.length/4);
         let currentPage = 1;
-        displayPosts(currentPage, blogs, totalPages);
+        displayPosts(currentPage, latest, totalPages);
         // PaginationNav(sortPost, totalPages)
     })
     .catch(error => console.error("Can't Fetch Blogs:", error));

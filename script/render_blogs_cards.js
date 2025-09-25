@@ -51,7 +51,7 @@ function createBlogCard(post){
         <a href="${post_path}">
             <div class="banner" style="background-image:url('${img_path}');"></div>
             <div class="content">
-                <h3>${post.title}</h3>
+                <h3>${post.title.length > 20 ? post.title.slice(0,20) + "..." : post.title}</h3>
                 <h4 class="date">${post.date}</h4>
                 <h4 class="summary">${post.content.slice(0,100)}...</h4>
             </div>
