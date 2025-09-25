@@ -3,6 +3,8 @@ const projectCard = document.getElementById("projects-posts-cards");
 fetch("../projects/projects.json")
     .then(response => response.json())
     .then(projects => {
+        const latest = projects.sort((a, b) => b.id - a.id);
+        // console.log(latest)
 
         let rowBlogs = [];
 
@@ -12,7 +14,7 @@ fetch("../projects/projects.json")
             
             row.classList.add("row");
 
-            rowBlogs = rowBlogs.concat(projects.slice(i, i + 3));
+            rowBlogs = rowBlogs.concat(latest.slice(i, i + 3));
         }
 
         const promises = rowBlogs.map(function(post){
@@ -34,7 +36,6 @@ function createProjCard(post){
     const projcard = document.createElement("div");
     projcard.className = "card";
     const proj_img_path = `../projects/${encodeURIComponent(post.title)}/${post.banner}`
-    const proj_path = `../projects/${encodeURIComponent(post.title)}/${encodeURIComponent(post.link)}`
     projcard.innerHTML = `
         <a href="${post.link}">
             <div class="banner" style="background-image:url('${proj_img_path}');"></div>
