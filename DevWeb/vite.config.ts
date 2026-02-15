@@ -11,5 +11,5 @@ export default defineConfig({
     setupFiles: './src/test/setup.ts',
     css: true,
   },
-  base: '/TestReactWeb/'
+  base: '/'
 })
