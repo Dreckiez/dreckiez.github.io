@@ -1,0 +1,26 @@
+[
+    {
+        "id": 3,
+        "title": "Surviving Sophomore Year",
+        "date": "25-09-2025",
+        "summary": "Lots of first things",
+        "slug": "surviving-sophomore",
+        "link": "/posts/surviving-sophomore"
+    },
+    {
+        "id": 2,
+        "title": "First-Ever Game Jam",
+        "date": "12-02-2025",
+        "summary": "How I make a game with zero experience",
+        "slug": "game-jam",
+        "link": "/posts/game-jam"
+    },
+    {
+        "id": 1,
+        "title": "My Freshman Year",
+        "date": "09-01-2025",
+        "summary": "Embarking on a journey",
+        "slug": "freshman-year",
+        "link": "/posts/freshman-year"
+    }
+]

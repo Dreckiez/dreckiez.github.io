@@ -1,8 +1,0 @@
-{
-    "title": "FilmForum",
-    "banner": "Homepage.png",
-    "link": "https://github.com/Dreckiez/FilmForum-Frontend",
-    "date": "Sophomore",
-    "summary": "Professional web development techs in the palm of my hand",
-    "content": "A film forum website where users can discover movies, write blogs, share reviews, and connect with a movie-loving community. This repository contains the frontend (React/Next.js) of the project. The backend is private, but you can see the functionality via screenshots."
-}
