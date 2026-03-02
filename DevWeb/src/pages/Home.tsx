@@ -62,7 +62,8 @@ const Home = () => {
                                 <LogEntry key={idx} date={log.type === 'Project' ? 'Project' : log.date} title={log.title}
                                     summary={log.summary}
                                     type={log.type as "Blog" | "Project"}
-                                    link={log.link}></LogEntry>
+                                    link={log.link}
+                                    image={log.banner}></LogEntry>
                             ))}
                             
                             <div className="mt-6 flex gap-6 text-sm font-mono">

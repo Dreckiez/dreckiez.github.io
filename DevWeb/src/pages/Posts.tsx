@@ -33,6 +33,7 @@ const Posts = () => {
                                     summary={blog.summary}
                                     type="Blog"
                                     link={blog.link}
+                                    image={blog.banner}
                                 />
                             ))}
                         </div>
