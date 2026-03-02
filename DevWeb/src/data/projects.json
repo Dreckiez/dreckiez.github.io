@@ -1,5 +1,15 @@
 [
     {
+        "id": 4,
+        "title": "PrivaCI",
+        "date": "02-03-2026",
+        "semester": "Open Source",
+        "banner": "images/projects/Login.png",
+        "summary": "Keeping my GitHub repos safe from my own leaked API keys",
+        "content": "An automated, full-stack DevSecOps platform for detecting hardcoded secrets, API keys, and PII across GitHub repositories.",
+        "link": "https://github.com/Dreckiez/PrivaCI"
+    },
+    {
         "id": 3,
         "title": "FilmForum",
         "date": "31-08-2025",
