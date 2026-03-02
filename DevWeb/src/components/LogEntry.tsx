@@ -14,7 +14,6 @@ const LogEntry = ({ date, title, summary, type = "Blog", link, image }: LogEntry
     const inner = (
         <div className="flex flex-col sm:flex-row justify-between p-4 rounded-lg hover:bg-white/5 transition-all border border-transparent hover:border-gray-700">
             
-            {/* Left Side: Text Content */}
             <div className="flex flex-col sm:flex-row gap-4 flex-1">
                 <div className="text-gray-500 font-mono text-sm min-w-25 shrink-0 pt-0.5">
                     {date}
@@ -29,7 +28,6 @@ const LogEntry = ({ date, title, summary, type = "Blog", link, image }: LogEntry
                 </div>
             </div>
 
-            {/* Right Side: Optional Thumbnail */}
             {image && (
                 <div className="shrink-0 mt-4 sm:mt-0 w-full sm:w-32 h-24 sm:h-20 overflow-hidden rounded border border-[#2f3136] bg-gray-800">
                     <img 

@@ -1,9 +1,20 @@
+import { useState } from 'react';
 import Navbar from '../components/Navbar';
 import ProfileCard from '../components/ProfileCard';
 import TerminalWindow from '../components/TerminalWindow';
 import projectsData from '../data/projects.json';
 
 const Projects = () => {
+    const ITEMS_PER_PAGE = 4;
+    const [currentPage, setCurrentPage] = useState(1);
+
+    const totalPages = Math.ceil(projectsData.length / ITEMS_PER_PAGE);
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    const currentProjects = projectsData.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+    const handlePrev = () => setCurrentPage(prev => Math.max(prev - 1, 1));
+    const handleNext = () => setCurrentPage(prev => Math.min(prev + 1, totalPages));
+
     return (
         <div className='min-h-screen font-segoe text-[#e8eef2] bg-[#151719] bg-fixed' style={{ backgroundImage: 'url(images/nnnoise.svg)' }}>
             <Navbar />
@@ -23,7 +34,7 @@ const Projects = () => {
                         </div>
 
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                            {projectsData.map((project) => (
+                            {currentProjects.map((project) => (
                                 <a 
                                     key={project.id} 
                                     href={project.link} 
@@ -71,6 +82,30 @@ const Projects = () => {
                                 </a>
                             ))}
                         </div>
+
+                        {totalPages > 1 && (
+                            <div className="mt-10 pt-6 border-t border-gray-800 flex justify-center items-center gap-8 font-mono text-sm select-none">
+                                <button 
+                                    onClick={handlePrev} 
+                                    disabled={currentPage === 1}
+                                    className="text-gray-500 cursor-pointer hover:text-emerald-400 disabled:opacity-30 disabled:hover:text-gray-500 disabled:cursor-not-allowed transition-colors"
+                                >
+                                    &lt; prev
+                                </button>
+                                
+                                <span className="text-gray-400">
+                                    page <span className="text-emerald-400 font-bold">{currentPage}</span> / {totalPages}
+                                </span>
+                                
+                                <button 
+                                    onClick={handleNext} 
+                                    disabled={currentPage === totalPages}
+                                    className="text-gray-500 cursor-pointer hover:text-emerald-400 disabled:opacity-30 disabled:hover:text-gray-500 disabled:cursor-not-allowed transition-colors"
+                                >
+                                    next &gt;
+                                </button>
+                            </div>
+                        )}
 
                     </TerminalWindow>
                 </div>
