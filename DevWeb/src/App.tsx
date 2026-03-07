@@ -4,17 +4,21 @@ import About from "./pages/About";
 import Projects from './pages/Projects';
 import Posts from './pages/Posts';
 import PostLoader from './pages/PostLoader';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/posts" element={<Posts />} />
-      <Route path="/projects" element={<Projects />} />
+    <>
+      <ScrollToTop></ScrollToTop>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/posts" element={<Posts />} />
+        <Route path="/projects" element={<Projects />} />
 
-      <Route path="/posts/:slug" element={<PostLoader />} />
-    </Routes>
+        <Route path="/posts/:slug" element={<PostLoader />} />
+      </Routes>
+    </>
   );
 }
 
