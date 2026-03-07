@@ -1,5 +1,14 @@
 [
     {
+        "id": 4,
+        "title": "🏆 2nd Place at the Developer Awards",
+        "banner": "images/posts/FTB_Developer_Awards.png",
+        "date": "03-03-2026",
+        "summary": "Actually winning something",
+        "slug": "developer-awards",
+        "link": "/posts/developer-awards"
+    },
+    {
         "id": 3,
         "title": "Surviving Sophomore Year",
         "banner": "images/posts/Sep.jpg",

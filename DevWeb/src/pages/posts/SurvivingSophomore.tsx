@@ -18,7 +18,7 @@ const SurvivingSophomore = () => {
 
                 <NVim filename='surviving_sophomore' title='Surviving Sophomore Year' date='25-09-2025' time='13 mins read'>
                     
-                    <p className="text-xl text-gray-400 italic leading-relaxed max-w-2xl mb-8 mx-auto">
+                    <p className="text-xl text-gray-400 text-center italic leading-relaxed max-w-2xl mb-8 mx-auto">
                         Reflecting on a year of extremes: from working part-time to deep-diving into frontend framework and struggling with advanced math. Here is how Sophomore year defined my path in Software Engineering.
                     </p>
 
@@ -42,7 +42,7 @@ const SurvivingSophomore = () => {
                     </p>
 
                     <div className="pl-4 border-l-2 border-purple-500/50 my-6 bg-purple-500/5 p-3 rounded-r-lg">
-                        <h4 className="font-bold text-purple-400 mb-1">📉 Status Effect: Social Battery Drain</h4>
+                        <h4 className="font-bold text-purple-400 mb-1">📉 Status Effect Applied: "Social Battery Drain"</h4>
                         <ul className="text-sm text-gray-400 font-mono space-y-1">
                             <li>- Charisma (I hate cold calling)</li>
                             <li>- Stamina (Talking to humans is hard)</li>
@@ -184,6 +184,12 @@ const SurvivingSophomore = () => {
                         </span>
                     </Link>
 
+                    <Link to="/posts/developer-awards" className="group flex flex-col items-end text-right">
+                        <span className="text-gray-500 text-xs font-mono mb-1">Next Post &gt;</span>
+                        <span className="text-emerald-400 font-bold group-hover:text-emerald-300 transition-colors">
+                            🏆 2nd Place at the Developer Awards
+                        </span>
+                    </Link>
                 </div>
 
             </div>

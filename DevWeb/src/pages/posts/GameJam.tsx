@@ -18,7 +18,7 @@ const GameJam = () => {
 
                 <NVim filename='game_jam' title='First-Ever Game Jam' date='12-02-2025' time='12 mins read'>
                     
-                    <p className="text-xl text-gray-400 italic leading-relaxed max-w-2xl mb-8 mx-auto">
+                    <p className="text-xl text-gray-400 text-center italic leading-relaxed max-w-2xl mb-8 mx-auto">
                         36 hours. One theme. Some sleep. How my team turned the concept of an "Economic Bubble" into a functioning Godot game (and how I survived on instant noodles).
                     </p>
 

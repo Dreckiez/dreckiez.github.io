@@ -18,7 +18,7 @@ const FreshmanYear = () => {
 
                 <NVim filename='freshman_year' title='My Freshman Year' date='09-01-2025' time='22 mins read'>
                     
-                    <p className="text-xl text-gray-400 italic leading-relaxed max-w-2xl mb-8 mx-auto">
+                    <p className="text-xl text-gray-400 text-center italic leading-relaxed max-w-2xl mb-8 mx-auto">
                         From sleeping through my first exam (literally) to coding a Pikachu clone and enjoying military training. A retrospective on my chaotic start at HCMUS.
                     </p>
 
