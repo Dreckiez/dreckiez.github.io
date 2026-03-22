@@ -6,6 +6,7 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import Posts from '../pages/Posts';
 import Projects from '../pages/Projects';
+import Photography from '../pages/Photography';
 
 const renderWithRouter = (component: React.ReactNode) => {
     return render(<MemoryRouter>{component}</MemoryRouter>);
@@ -90,5 +91,22 @@ describe('Main Pages Check', () => {
         // 3. Check that Project Cards are rendering
         const sourceLinks = screen.getAllByText(/View Source/i);
         expect(sourceLinks.length).toBeGreaterThan(0);
+    });
+
+    // --- TEST 5: PHOTOGRAPHY (GALLERY) ---
+    it('renders Photography gallery', () => {
+        renderWithRouter(<Photography />);
+
+        checkProfileCard();
+
+        // 1. Check Terminal Title
+        expect(screen.getByText("root@dreckiez:~/media/photos")).toBeInTheDocument();
+
+        // 2. Check the simulated "tree" command
+        expect(screen.getByText(/tree --charset=ascii/i)).toBeInTheDocument();
+
+        // 3. Check the scanning status text
+        expect(screen.getByText(/scanning \d+ media files\.\.\./i)).toBeInTheDocument();
+        expect(screen.getByText(/\[OK\]/i)).toBeInTheDocument();
     });
 });
