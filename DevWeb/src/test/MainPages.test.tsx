@@ -18,6 +18,7 @@ describe('Main Pages Check', () => {
         expect(screen.getAllByText("Dreckiez").length).toBeGreaterThan(0);
         expect(screen.getByText("DevOps Aspirant")).toBeInTheDocument();
         expect(screen.getByText("HCMUS, Vietnam")).toBeInTheDocument();
+        expect(screen.getByText(/View_Resume\.pdf/i)).toBeInTheDocument();
     };
 
     // --- TEST 1: HOME PAGE ---

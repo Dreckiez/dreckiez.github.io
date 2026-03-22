@@ -27,8 +27,17 @@ const ProfileCard = () => {
                     ))}
                 </div>
 
+                <a 
+                    href="https://drive.google.com/file/d/1ZJgOsmYyWD2c7UnU54LsDvMaFCnxWNVC/view?usp=sharing" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="mt-6 flex items-center justify-center gap-2 w-full bg-emerald-600/20 text-emerald-300 border border-emerald-500/50 px-4 py-2 rounded text-sm hover:bg-emerald-600/30 transition-colors font-mono cursor-pointer"
+                >
+                    <i className="fa-solid fa-file-pdf"></i> [ View_Resume.pdf ]
+                </a>
+
                 {/* Status Widget */}
-                <div className="bg-[#151719] rounded-lg p-4 text-sm border border-[#2f3136]">
+                <div className="bg-[#151719] mt-6 rounded-lg p-4 text-sm border border-[#2f3136]">
                     <div className="flex items-center gap-3 mb-2 text-gray-300">
                         <span className="text-red-400">📍</span>
                         <span>HCMUS, Vietnam</span>
