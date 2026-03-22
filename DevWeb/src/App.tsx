@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import About from "./pages/About";
 import Projects from './pages/Projects';
 import Posts from './pages/Posts';
+import Photography from './pages/Photography';
 import PostLoader from './pages/PostLoader';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/posts" element={<Posts />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path='/photography' element={<Photography />} />
 
         <Route path="/posts/:slug" element={<PostLoader />} />
       </Routes>

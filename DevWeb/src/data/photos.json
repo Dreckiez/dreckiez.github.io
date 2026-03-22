@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "url": "../images/photos/000004.jpg",
+    "date": "2026-01-11",
+    "location": "Book Street",
+    "camera": "Pentax SP"
+  },
+  {
+    "id": 2,
+    "url": "../images/photos/000011.jpg",
+    "date": "2026-01-11",
+    "location": "Book Street",
+    "camera": "Pentax SP"
+  },
+  {
+    "id": 3,
+    "url": "../images/photos/000012.jpg",
+    "date": "2026-01-11",
+    "location": "Opera House",
+    "camera": "Pentax SP"
+  },
+  {
+    "id": 4,
+    "url": "../images/photos/000013.jpg",
+    "date": "2026-01-11",
+    "location": "Opera House",
+    "camera": "Pentax SP"
+  },
+  {
+    "id": 5,
+    "url": "../images/photos/000014.jpg",
+    "date": "2026-01-11",
+    "location": "Opera House",
+    "camera": "Pentax SP"
+  },
+  {
+    "id": 6,
+    "url": "../images/photos/IMG_2960.jpg",
+    "date": "2026-01-14",
+    "location": "Thao Dien",
+    "camera": "iPhone 12"
+  }
+]
