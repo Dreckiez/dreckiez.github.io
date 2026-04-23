@@ -1,6 +1,6 @@
 [
     {
-        "id": 4,
+        "id": 5,
         "title": "PrivaCI",
         "date": "02-03-2026",
         "semester": "Open Source",
@@ -10,7 +10,7 @@
         "link": "https://github.com/Dreckiez/PrivaCI"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "FilmForum",
         "date": "31-08-2025",
         "semester": "Sophomore",
@@ -18,6 +18,16 @@
         "summary": "Professional web development techs in the palm of my hand",
         "content": "A film forum website where users can discover movies, write blogs, share reviews, and connect with a movie-loving community. This repository contains the frontend (React/Next.js) of the project. The backend is private, but you can see the functionality via screenshots.",
         "link": "https://github.com/Dreckiez/FilmForum-Frontend"
+    },
+    {
+        "id": 3,
+        "title": "EcoBub",
+        "date": "19-01-2025",
+        "semester": "Sophomore",
+        "banner": "images/projects/EcoBub.png",
+        "summary": "Economic bubble simulator built in 36 hours for Global Game Jam 2025",
+        "content": "A stock market simulator created for Global Game Jam 2025. Focused on managing real-time game states and UI integration through an event-driven system using Godot Signals.",
+        "link": "https://github.com/DanielNguyen-05/EcoBub"
     },
     {
         "id": 2,
